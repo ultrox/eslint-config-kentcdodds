@@ -1,7 +1,7 @@
 {
-  "name": "eslint-config-kentcdodds",
+  "name": "eslint-config-mavu",
   "version": "0.0.0-semantically-released",
-  "description": "ESLint rules according to kentcdodds' personal preference",
+  "description": "ESLint rules according to mavu' personal preference",
   "main": "index.js",
   "scripts": {
     "commit": "git-cz",
@@ -18,7 +18,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/kentcdodds/eslint-config-kentcdodds.git"
+    "url": "https://github.com/ultrox/eslint-config-mavu.git"
   },
   "keywords": [
     "eslint",
@@ -33,7 +33,7 @@
   "bugs": {
     "url": "https://github.com/kentcdodds/eslint-config-kentcdodds/issues"
   },
-  "homepage": "https://github.com/kentcdodds/eslint-config-kentcdodds#readme",
+  "homepage": "https://github.com/mavu/eslint-config-mavu#readme",
   "dependencies": {
     "babel-eslint": "^9.0.0",
     "eslint-config-prettier": "^3.0.1",
