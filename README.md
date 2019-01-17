@@ -1,6 +1,6 @@
 # eslint-config-mavu
 
-[![travis build](https://img.shields.io/travis/mavu/eslint-config-mavu.svg?style=flat-square)](https://travis-ci.org/mavu/eslint-config-mavu)
+[![Build Status](https://travis-ci.org/ultrox/eslint-config-mavu.svg?branch=master)](https://travis-ci.org/ultrox/eslint-config-mavu)
 [![version](https://img.shields.io/npm/v/eslint-config-mavu.svg?style=flat-square)](http://npm.im/eslint-config-mavu)
 [![downloads](https://img.shields.io/npm/dm/eslint-config-mavu.svg?style=flat-square)](http://npm-stat.com/charts.html?package=eslint-config-mavu&from=2015-08-01)
 [![MIT License](https://img.shields.io/npm/l/eslint-config-mavu.svg?style=flat-square)](http://opensource.org/licenses/MIT)
@@ -18,15 +18,14 @@ Install the conventions by running:
 npm install --save-dev eslint eslint-config-mavu
 ```
 
-Then add the extends to your `.eslintrc`:
+Then add the extends to your `.eslintrc.yaml`:
 
-```javascript
-{
-  "extends": "mavu",
-  "rules": {
-    // your overrides
+```yaml
+
+  extends: mavu
+  rules:
+    # your overrides
   }
-}
 ```
 
 ### Other configs
@@ -35,18 +34,18 @@ This config also exposes a few other configs that I use often and pull in as nee
 
 You can use them standalone:
 
-```javascript
-{
-  "extends": "mavu/<config-name>"
-}
+```yaml
+extends: 
+- mavu/config-name
+
 ```
 
 Or in combination with the base config (recommended)
 
-```javascript
-{
-  "extends": ["mavu", "mavu/<config-name>"]
-}
+```yaml
+extends:
+  - mavu
+  - mavu/config-name
 ```
 
 **Note**: I'm not certain why, but sometimes you need to have the associated plugins
@@ -68,15 +67,17 @@ if you're going to use the config for it.
 
 #### Example of highly customized config
 
-```javascript
-{
-  "extends": [
-    "mavu/possible-errors", "mavu/best-practices",
-    "mavu/es6/possible-errors", "mavu/import",
-    "mavu/jest"
-  ],
-  "rules": { /* custom rules */ }
-}
+```yaml
+---
+extends:
+- mavu/possible-errors
+- mavu/best-practices
+- mavu/es6/possible-errors
+- mavu/import
+- mavu/jest
+rules:
+# overrides
+
 ```
 
 ## LICENSE
