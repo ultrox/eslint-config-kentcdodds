@@ -4,7 +4,6 @@
   "description": "ESLint rules according to mavu' personal preference",
   "main": "index.js",
   "scripts": {
-    "commit": "git-cz",
     "lint": "eslint .",
     "test": "npm-run-all --parallel lint find-new-rules",
     "find-new-rules": "npm-run-all --parallel find-new-rules:*",
@@ -32,9 +31,9 @@
   "author": "Kent C. Dodds <kent@doddsfamily.us> (http://kentcdodds.com/)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/kentcdodds/eslint-config-kentcdodds/issues"
+    "url": "https://github.com/ultrox/eslint-config-mavu/issues"
   },
-  "homepage": "https://github.com/mavu/eslint-config-mavu#readme",
+  "homepage": "https://github.com/ultrox/eslint-config-mavu#readme",
   "dependencies": {
     "babel-eslint": "^9.0.0",
     "eslint-config-prettier": "^3.0.1",
