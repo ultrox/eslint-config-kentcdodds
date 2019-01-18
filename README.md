@@ -79,6 +79,8 @@ rules:
 # overrides
 
 ```
+## Auto updates
+Version 1
 
 ## LICENSE
 
