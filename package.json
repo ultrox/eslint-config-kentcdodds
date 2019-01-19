@@ -14,7 +14,7 @@
     "find-new-rules:webpack": "eslint-find-rules --unused ./other/test/webpack.js",
     "precommit": "npm run validate",
     "validate": "npm t",
-    "semantic-release": "semantic-release"
+    "release": "semantic-release"
   },
   "repository": {
     "type": "git",
