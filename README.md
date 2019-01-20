@@ -8,7 +8,8 @@
 
 ## Note
 
-This is fork from kentcdodds with my own customizations.
+This is fork from kentcdodds with my own customizations, supports Nextjs &
+promotes yaml configuration.
 
 ## Usage
 
@@ -21,8 +22,10 @@ npm install --save-dev eslint eslint-config-mavu
 Then add the extends to your `.eslintrc.yaml`:
 
 ```yaml
-
-  extends: mavu
+  extends:
+    - mavu
+    - mavu/react
+    - mavu/next
   rules:
     # your overrides
   }
