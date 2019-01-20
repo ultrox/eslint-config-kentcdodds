@@ -1,7 +1,7 @@
 {
   "name": "eslint-config-mavu",
   "version": "0.0.0-development",
-  "description": "ESLint rules according to mavu' personal preference",
+  "description": "Flexible ESLint rules optimized for react & nextjs promotes yaml config",
   "main": "index.js",
   "scripts": {
     "lint": "eslint .",
