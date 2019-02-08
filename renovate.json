@@ -4,7 +4,10 @@
   "semanticCommits": true,
   "semanticCommitType": "chore",
   "extends": [
-    "config:base"
+    "config:base",
+    ":preserveSemverRanges",
+    "schedule:weekly",
+    ":automergePatch"
   ],
     "renovateFork": true,
     "major": {
